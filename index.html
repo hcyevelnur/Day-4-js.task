@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 4 - Js Task</title>
+    <link rel="stylesheet" href="https://kit.fontawesome.com/372df5dc70.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" type="image/x-icon" href="./img/Breaking-Bad-icon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-light bg-dark" style="height: 80px;">
+        <div 
+        style="padding-right: 100px;
+        display: flex;
+        justify-content: space-evenly;
+        padding-left: 50px;" class="container-fluid">
+          <a 
+          style="
+          color: white; 
+          font-size: 40px;" class="navbar-brand">
+          Movie Website
+        </a>
+          <form class="d-flex">
+            <input 
+            style="
+            width: 400px;" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success"><i class="fa fa-search"></i></button>
+          </form>
+          <a class="text-14" 
+          style="
+          color: white;
+          text-decoration: none;" href="" data-replace="Home"><span>
+            Home</span>
+          </a>
+          <a class="text-14" 
+          style="
+          color: white; 
+          text-decoration: none;" href="./movie.html" data-replace="Movie"><span>
+            Movie</span>
+          </a>
+          <a class="text-14" 
+          style="
+          color: white; 
+          text-decoration: none;" href="#" data-replace="Actors"><span>
+            Actors</span>
+          </a>
+          <a class="text-14" 
+          style="
+          color: white; 
+          text-decoration: none;" href="#" data-replace="Contact"><span>
+            Contact</span>
+          </a>
+        </div>
+      </nav>
+
+
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img style="height: 700px;" src="./img/karusel-1.jpeg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img style="height: 700px;" src="./img/karusel-2.jpeg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img style="height: 700px;" src="./img/karusel-1.jpeg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <br>
+      <p 
+      style="
+      text-align: center; 
+      font-size: 30px; 
+      color: #A2262d;">
+      Coming
+      </p>
+      <div 
+      style="
+      text-align:center;" 
+      id="category-buttons">
+        <button class="button-e" id="all-btn">
+          All
+        </button>
+        <button class="button-e" id="drama-btn">
+          Anime
+        </button>
+        <button class="button-e" id="comedy-btn">
+          Adventure
+        </button>
+        <button class="button-e" id="action-btn">
+          Action
+        </button>
+      </div>
+      <br>
+      <div 
+      style="
+      display: flex; 
+      justify-content: 
+      space-evenly;" class="gosteriss">
+      </div>
+      <br>
+      <br>
+      <div 
+      style="
+      display: flex; 
+      justify-content: center;" 
+      id="button-container">
+        <button 
+        style="
+        background-color: red;
+        margin-right:10px;
+        border: none;
+        border-radius: 5px;
+        width: 70px;
+        height: 30px;" id="sil-btn" class="decrease">
+        -
+        </button>
+        <div 
+        style="
+        margin-top:3px;" class="number">
+        0
+        </div>
+        <button 
+        style="
+        background-color: greenyellow;
+        margin-left:10px;
+        border: none;
+        border-radius: 5px;
+        width: 70px;
+        height: 30px;" id="elave-et" class="increase">
+        +
+        </button>
+      </div>
+
+      <br>
+
+      <footer>
+        <br>
+            <i style="font-size: 25px;" class="fab fa-facebook-f"></i>
+            <i style="font-size: 25px; padding-left: 15px;" class="fa-brands fa-twitter"></i>
+            <i style="font-size: 25px; padding-left: 15px;" class="fa-brands fa-instagram"></i>
+            <i style="font-size: 25px; padding-left: 15px;" class="fa-brands fa-youtube"></i>
+        <br>
+        <p style="font-size: 20px; padding-top: 20px;">© 2023 Codelandia Students</p>
+      </footer>
+      <script src="https://kit.fontawesome.com/372df5dc70.js" crossorigin="anonymous"></script></body>
+      <script src="./js/main.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+      <script></script>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,136 @@
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box ;
+    border: 0px solid;
+    border-radius: 10px !important;
+}
+.card-2-2 {
+    
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box ;
+    border: 0px solid !important;
+    border-radius: 0.25rem;
+    
+}
+footer {
+    text-align: center;
+    padding: 3px;
+    background-color: black;
+    color: white;
+    height: 130px;
+  }
+
+  .btn-outline-success {
+    color: white !important;
+    border-color: white !important;
+}
+
+.btn-outline-success:hover {
+    color: black !important;
+    border-color: white !important;
+    background-color: #fff !important;
+}
+
+.text-14 {
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .text-14::before,
+  .text-14::after {
+   content: '';
+    position: absolute;
+    width: 100%;
+    left: 0;
+  }
+  .text-14::before {
+    background-color: #54b3d6;
+    height: 2px;
+    bottom: 0;
+    transform-origin: 100% 50%;
+    transform: scaleX(0);
+    transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+  }
+  .text-14::after {
+    content: attr(data-replace);
+    height: 100%;
+    top: 0;
+    transform-origin: 100% 50%;
+    transform: translate3d(200%, 0, 0);
+    transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+    color: #54b3d6;
+  }
+  
+  .text-14:hover::before {
+    transform-origin: 0% 50%;
+    transform: scaleX(1);
+  }
+  .text-14:hover::after {
+    transform: translate3d(0, 0, 0);
+  }
+  
+  .text-14 span {
+    display: inline-block;
+    transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+  }
+  
+  .text-14:hover span {
+    transform: translate3d(-200%, 0, 0);
+  }
+
+
+
+.img-hover-zoom {
+    height: 190px; 
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  
+  .img-hover-zoom img {
+    transition: transform .5s, filter 1.5s ease-in-out;
+    filter: grayscale(100%);  }
+  
+  .img-hover-zoom:hover img {
+    filter: grayscale(0);
+    transform: scale(1.1);  }
+
+
+    .button-e {
+      background-color: #ff30f1;
+      border: none;
+      color: white;
+      padding: 5px 15px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 10px;
+      transition-duration: 0.4s;
+    }
+
+    .button-e {
+      background-color: white; 
+      color: black; 
+      border: 2px solid #b62bcf;
+    }
+    
+    .button-e:hover {
+      background-color: #b62bcf;
+      color: white;
+    }
+  
+
+  
