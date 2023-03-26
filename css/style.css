@@ -131,6 +131,38 @@ footer {
       background-color: #b62bcf;
       color: white;
     }
+
+    .buton-1-1{
+      background-color: red;
+      margin-right:10px;
+      border: none;
+      border-radius: 5px;
+      width: 70px;
+      height: 30px;
+    }
+
+    .clas-1-1{
+      margin-top:3px;
+    }
+
+    .buton-2-2{
+      background-color: greenyellow;
+      margin-left:10px;
+      border: none;
+      border-radius: 5px;
+      width: 70px;
+      height: 30px;
+    }
+
+    .d-flex-1{
+      display: flex; 
+      justify-content: center;
+    }
+
+    .d-flex-2{
+      display: flex; 
+      justify-content: space-evenly;
+    }
   
 
   
